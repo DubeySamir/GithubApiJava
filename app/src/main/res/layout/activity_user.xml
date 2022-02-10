@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_300"
+    android:padding="@dimen/_16ssp"
+    tools:context=".UserActivity">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/_100ssp"
+        android:layout_height="@dimen/_100ssp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/username"
+        style="@android:style/TextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15ssp"
+        android:textSize="@dimen/_18ssp" />
+
+    <TextView
+        android:id="@+id/logIn"
+        style="@android:style/TextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_4ssp"
+        android:textSize="@dimen/_18ssp" />
+
+    <TextView
+        android:id="@+id/followers"
+        style="@android:style/TextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logIn"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_18ssp" />
+
+    <TextView
+        android:id="@+id/following"
+        style="@android:style/TextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/followers"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_18ssp" />
+
+    <TextView
+        android:id="@+id/email"
+        style="@android:style/TextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/following"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_18ssp" />
+
+    <Button
+        android:id="@+id/ownedReposBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_15ssp"
+        android:text="Repositories"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_20ssp" />
+
+</RelativeLayout>
